@@ -1,0 +1,76 @@
+.login-container {
+    justify-content: center;
+    align-items: center;
+    background-color: #d6d9e0;
+    height: 100%;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.login-up-paper-container {
+    margin: 10px;
+    background-color: #f0f4f8 !important;
+    border-radius: 100px;
+    /* width: 35vw; */
+}
+
+
+.login-paper {
+    padding: 20px;
+    /* width: 40vw; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-title {
+    font-weight: 800;
+    color: #4a4a4a;
+}
+
+.login-form-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.login-input-with-image {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* width: 100%; */
+    background-color: white;
+    border-radius: 30px;
+    /* Rounded input container */
+    padding: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-input-avatar {
+    background-color: #1976d2;
+    color: white;
+}
+
+.rounded-input {
+    border-radius: 30px;
+}
+
+.login-rounded-input input {
+    border-radius: 30px;
+    width: 30vw;
+    /* padding: 40px; */
+}
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {
+    .login-rounded-input input {
+        border-radius: 30px;
+        width: 40vw;
+        /* padding: 40px; */
+    }
+
+}

@@ -1,0 +1,127 @@
+.boxContainer {
+    width: 100vw;
+    height: 90vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.fileContainer {
+    width: 90vw;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+.paperContainerChat {
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Desktop view */
+.paperContainer {
+    width: 35vw;
+    height: 80vh;
+    background-color: #f0f4f7 !important;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.paperContainerChat {
+    width: 58vw;
+    height: 80vh;
+}
+
+/* Tablet View */
+@media (max-width: 1024px) {
+    .boxContainer {
+        overflow: scroll;
+        padding: 10px 20px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .fileContainer {
+        margin: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .paperContainer,
+    .paperContainerChat {
+        width: 90vw;
+        height: 85vh;
+    }
+}
+
+/* Big Mobile Screens (481px - 768px) */
+@media (max-width: 768px) {
+    .boxContainer {
+        overflow: scroll;
+        padding: 10px 20px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .fileContainer {
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .paperContainer,
+    .paperContainerChat {
+        width: 90vw;
+        height: 85vh;
+    }
+
+
+}
+
+/* Small Mobile Screens (320px - 480px) */
+@media (max-width: 480px) {
+    .boxContainer {
+        overflow: scroll;
+        padding: 10px 20px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .fileContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px 0;
+    }
+
+    .paperContainer,
+    .paperContainerChat {
+        margin: 10px auto;
+        width: 95vw;
+        height: 90vh;
+    }
+
+    .paperContainerChat {
+        margin-top: 15px;
+        /* Small margin between sections */
+    }
+
+    /* Adjustments for smaller font sizes and padding */
+    .paperContainerChat,
+    .paperContainer {
+        padding: 5px;
+    }
+
+
+}

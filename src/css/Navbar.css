@@ -1,0 +1,101 @@
+.navbar-appbar {
+    background-color: #f0f4f8 !important;
+    color: rgba(63, 81, 181, 0.4) !important;
+
+}
+
+
+.navbar-toolbar {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* .navbar-logo-text {
+    cursor: pointer;
+} */
+
+.navbar-links {
+    display: flex;
+    /* color: white; */
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 10px;
+}
+
+.navbar-links .navbar-link-btn {
+    color: #3f51b5;
+    font-size: 1rem;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.navbar-links .navbar-link-btn:hover {
+    background-color: rgb(95, 26, 160);
+    color: white;
+}
+
+.navbar-main-root {
+    flex-grow: 1;
+    display: flex;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #3f51b5;
+}
+
+.navbar-logo-icon {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Media queries for tablet and mobile */
+@media screen and (max-width: 900px) {
+    .navbar-links {
+        display: none;
+    }
+
+    .navbar-main-root {
+        flex-grow: 1;
+    }
+
+    .navbar-appbar {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .navbar-links {
+        display: flex;
+        gap: 20px;
+        justify-content: space-evenly;
+    }
+
+    .navbar-logo-text {
+        font-size: 1.5rem;
+    }
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 600px) {
+    .navbar-avatar {
+        width: 30px;
+        height: 30px;
+    }
+
+    .navbar-settings-menu {
+        width: 100vw;
+    }
+
+    .navbar-setting-item {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .navbar-avatar {
+        width: 40px;
+        height: 40px;
+    }
+}
