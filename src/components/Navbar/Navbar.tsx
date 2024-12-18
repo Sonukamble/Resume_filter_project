@@ -17,7 +17,7 @@ const Navbar = () => {
     const { isAuthenticated } = userContext;
 
     const pages = ['Home', 'About', 'Services'];
-    const pageLinks = ['/', '/about', '/services'];
+    const pageLinks = ['/', '/Resume_filter_project/about', '/Resume_filter_project/services'];
 
     const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
         setAnchorElNav(event.currentTarget);
@@ -105,10 +105,10 @@ const Navbar = () => {
                             ))}
                             {!isAuthenticated && (
                                 <>
-                                    <Link href="/signup">
+                                    <Link href="/Resume_filter_project/signup">
                                         <Button className="navbar-link-btn">SignUp</Button>
                                     </Link>
-                                    <Link href="/login">
+                                    <Link href="/Resume_filter_project/login">
                                         <Button className="navbar-link-btn">LogIn</Button>
                                     </Link>
                                 </>
