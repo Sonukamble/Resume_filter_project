@@ -22,6 +22,7 @@ function App() {
           <Route path="/Resume_filter_project/login" element={<LogIn />} />
           <Route path="/Resume_filter_project/signup" element={<SignUp />} />
 
+
         </Routes>
       </Router>
     </UserInformationProvider>
