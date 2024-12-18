@@ -1,13 +1,8 @@
 import { Stack, Typography, Button } from '@mui/material';
 import HomeImg from '../../assets/FAQ.png';
 import '../../css/Pages/Home.css';
-import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
-  const navigate = useNavigate();
-  const HandleStart = () => {
-    navigate('/about');
-  }
   return (
     <Stack direction="row" className='home-container'>
       <img src={HomeImg} alt="Creative Resume Filtering" className='image-FQA' />
