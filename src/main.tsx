@@ -7,7 +7,3 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <App />
   </React.StrictMode>,
 )
-
-
-
-// C: \Users\ADMIN\Documents\Workarea\ml_project_resume\local_project\React_Project\Resume_filter_project\src\components\commons
