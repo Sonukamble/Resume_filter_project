@@ -14,14 +14,13 @@ function App() {
     <UserInformationProvider>
 
       <Navbar />
-      <Router>
+      <Router basename="/Resume_filter_project">
         <Routes>
-          <Route path="/Resume_filter_project/" element={<Home />} />
-          <Route path="/Resume_filter_project/about" element={<About />} />
-          <Route path="/Resume_filter_project/services" element={<Services />} />
-          <Route path="/Resume_filter_project/login" element={<LogIn />} />
-          <Route path="/Resume_filter_project/signup" element={<SignUp />} />
-
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/login" element={<LogIn />} />
+          <Route path="/signup" element={<SignUp />} />
 
         </Routes>
       </Router>
