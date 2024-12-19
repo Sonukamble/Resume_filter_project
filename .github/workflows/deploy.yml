@@ -21,7 +21,10 @@ jobs:
         uses: bahmutov/npm-install@v1
 
       - name: Build project
-        run: npm run build
+        run: |
+          npm run build
+          # Copy index.html to 404.html for GitHub Pages routing
+          cp dist/index.html dist/404.html
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v3
