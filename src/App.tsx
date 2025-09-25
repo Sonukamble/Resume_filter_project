@@ -7,6 +7,7 @@ import './css/App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import About from "./components/Pages/About";
 import Home from "./components/Pages/Home";
+import Sales from "./components/Pages/Sales";
 
 function App() {
   // const FastAPI = process.env.REACT_APP_API_URL;
@@ -20,12 +21,13 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/sales" element={<Sales />} />
           <Route path="/login" element={<LogIn />} />
           <Route path="/signup" element={<SignUp />} />
 
         </Routes>
       </Router>
-      <!-- verify-admitad: "7a742f58bb" -->
+      {/* verify-admitad: "7a742f58bb" */}
     </UserInformationProvider>
   )
 }

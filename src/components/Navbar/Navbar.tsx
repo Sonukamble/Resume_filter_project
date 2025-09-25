@@ -16,8 +16,8 @@ const Navbar = () => {
 
     const { isAuthenticated } = userContext;
 
-    const pages = ['Home', 'About', 'Services'];
-    const pageLinks = ['/', '/about', '/services'];
+    const pages = ['Home', 'About', 'Services', 'Sales'];
+    const pageLinks = ['/', '/about', '/services', '/sales'];
 
     const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
         setAnchorElNav(event.currentTarget);
