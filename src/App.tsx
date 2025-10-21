@@ -7,7 +7,6 @@ import './css/App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import About from "./components/Pages/About";
 import Home from "./components/Pages/Home";
-import Sales from "./components/Pages/Sales";
 
 function App() {
   // const FastAPI = process.env.REACT_APP_API_URL;
@@ -16,7 +15,7 @@ function App() {
     <UserInformationProvider>
 
       <Navbar />
-      <Router>
+      <Router basename="/Resume_filter_project">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
