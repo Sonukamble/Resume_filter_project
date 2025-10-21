@@ -1,4 +1,4 @@
-declare module 'react-google-login' {
+declare module '@react-oauth/google' {
     import { Component } from 'react';
 
     export interface GoogleLoginProps {
