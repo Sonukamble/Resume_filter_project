@@ -5,9 +5,11 @@ import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
   const navigate = useNavigate();
+
   const HandleStart = () => {
     navigate('/about');
   }
+
   return (
     <Stack direction="row" className='home-container'>
       <img src={HomeImg} alt="Creative Resume Filtering" className='image-FQA' />
@@ -21,7 +23,12 @@ const Home = () => {
         <Typography variant="body1" className="home-description">
           Upload your resume and get insights from experts. Whether you're looking for advice from recruiters or guidance from experienced professionals, we're here to help you stand out in your job search. Your future starts here!
         </Typography>
-        <Button variant="contained" color="primary" className="upload-button">
+        <Button
+          variant="contained"
+          color="primary"
+          className="upload-button"
+          onClick={HandleStart}   // ← Now using the function
+        >
           Know About More
         </Button>
       </Stack>
